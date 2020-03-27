@@ -8,36 +8,98 @@
 </head>
 <style>
     html {
-        background: oldlace;
+        background:white;
     }
 
     body {
-        background-color: forestgreen;
-        max-width: 540px;
+        background-color:white;
+        max-width: 640px;
         margin: 0 auto;
         width: 100%;
+        /* position: relative; */
     }
 
     h1 {
         text-align: center;
         font-size: 35px;
         color: white;
+        margin-top: 50px;
     }
 
-    .quz-header {
+    .qui-header {
         background-color: #2bab79;
         height: 60px;
+    }
+
+    .plcRouteList{
+        margin-left: 5px;
+    }
+
+    .pic{
+        border-radius: 50%;
+    }
+
+    .title{
+        position: absolute;
+        font-size: 18px;
+        font-weight: bolder;
+        color:white;
+        top: 0px;
+        left: 20px;
+        white-space: nowrap;
+        line-height: 40px;
+        margin-left: 30px;
+        /* border: 1px solid black; */
+    }
+
+    .bottom{
+        position: absolute;
+        top: 425px;
+        left: 465px;
+    }
+
+    .face{
+        float: left;
+        border:1px solid white;
+        border-radius: 50%;
+        width: 39px;
+        height: 39px; 
+    }
+
+    .day{
+        position: absolute;
+        top: 115px;
+        right: 480px;
+        border-radius: 50%;
+        color:white;
+        background-color:#2bab79;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
     }
 
 </style>
 
 <body>
-    <header class=".quz-header">
+    <header class="qui-header">
         <h1>国内旅游计划</h1>
     </header>
-    <a href="#">
-    <img scr="tour/image/fengjing.jpg" alt="540px" width="540px">
-    </a>
+
+    <section class="plcRouteList">
+        <a href="#">
+            <img src="images/fengjing.jpg" alt="" width="635px">
+        </a>
+
+        <div class="bottom">
+            <p class="face">
+        <img src="images/touxiang.jpg" alt="" width="38" height="38" class="pic">
+        </p>
+        <h2 class="title">我的旅游行程</h2>
+        </div>
+        
+        <p class="day">14天</p>
+    </section>
 </body>
 
 </html>
